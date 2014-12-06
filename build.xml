@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<project name="PHPUnit-TestFiles-Generator" default="build" basedir=".">
+	<target name="build">
+		<delete dir="build"/>
+		<mkdir dir="build"/>
+		<exec command="cxfreeze src/test-files-generator.py --target-dir build/"></exec>
+	</target>
+</project>
